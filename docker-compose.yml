@@ -10,7 +10,6 @@ services:
       - ./:/usr/workspace
     command: >
       /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
-    #    /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER LOGIN_DOCKER=$$LOGIN_DOCKER PASSWORD_DOCKER=$$PASSWORD_DOCKER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
     working_dir: /usr/workspace
     environment:
       BROWSER: ${BROWSER:-chrome}
