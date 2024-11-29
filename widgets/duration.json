@@ -1,31 +1,31 @@
 [ {
-  "uid" : "9f87754d165f0b3f",
+  "uid" : "a090a46c09cc0618",
   "name" : "Create a new request",
   "time" : {
-    "start" : 1732903646727,
-    "stop" : 1732903684770,
-    "duration" : 38043
+    "start" : 1732904418082,
+    "stop" : 1732904441480,
+    "duration" : 23398
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "trivial"
 }, {
-  "uid" : "42f9a83ceb6cdb34",
+  "uid" : "713a87dc83709e7e",
   "name" : "Add new services",
   "time" : {
-    "start" : 1732903646692,
-    "stop" : 1732903682859,
-    "duration" : 36167
+    "start" : 1732904418105,
+    "stop" : 1732904471444,
+    "duration" : 53339
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "minor"
 }, {
-  "uid" : "226debdff7d18ab",
+  "uid" : "9ac571dd765022a8",
   "name" : "Account login",
   "time" : {
-    "start" : 1732903646759,
-    "stop" : 1732903687361,
-    "duration" : 40602
+    "start" : 1732904418087,
+    "stop" : 1732904450284,
+    "duration" : 32197
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
 } ]
