@@ -63,7 +63,7 @@ jobs:
       # Шаг 6 - Деплой на gh-pages
       # Публикуем Allure-отчет на GitHub Pages
       - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@v4
 #        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }} # Токен для аутентификации
