@@ -1,6 +1,6 @@
 name: UI Tests # Название workflow для удобства отображения в GitHub Actions
 
-on: [push] # Запуск workflow при пуше в репозиторий
+on: [ push ] # Запуск workflow при пуше в репозиторий
 
 jobs:
   ui-tests:

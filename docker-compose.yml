@@ -2,8 +2,8 @@ version: "3.7"
 
 services:
   tests:
-    #    image: pytest:v1
-    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
+    image: pytest:v1
+    #    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
     build:
       context: .
       dockerfile: Dockerfile
@@ -21,18 +21,15 @@ services:
     tty: true
 
   report:
-    #    image: pytest:v1
-    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
+    image: pytest:v1
+    #    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/workspace
     command: >
-      /bin/sh -c "echo "Branch=$CI_COMMIT_REF_NAME" > allure-results/environment.properties &&
-      echo "Commit=$CI_COMMIT_SHORT_SHA" >> allure-results/environment.properties &&
-      echo "Browser=$BROWSER" >> allure-results/environment.properties &&
-      allure generate allure-results --clean -o allure-report"
+      /bin/sh -c "allure generate allure-results --clean -o allure-report"
     working_dir: /usr/workspace
 
 
