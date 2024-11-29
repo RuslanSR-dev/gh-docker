@@ -16,8 +16,8 @@ services:
     environment:
       BROWSER: ${BROWSER:-chrome}
       STAGE: ${STAGE:-qa}
-      LOGIN_DOCKER: ${LOGIN_DOCKER}
-      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
+    # LOGIN_DOCKER: ${LOGIN_DOCKER}
+    # PASSWORD_DOCKER: ${PASSWORD_DOCKER}
     tty: true
 
   report:
