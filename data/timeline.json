@@ -1,60 +1,60 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "77cfd5d728cf",
+    "name" : "6974661bef7a",
     "children" : [ {
       "name" : "15-MainThread",
       "children" : [ {
         "name" : "Create a new request",
-        "uid" : "a090a46c09cc0618",
-        "parentUid" : "ab95bbfd38d9ff65d0e4b6d9268274ed",
+        "uid" : "44d83e70f2abd0b5",
+        "parentUid" : "a4ef7783093ec10d8b303ab9e1dd17ad",
         "status" : "passed",
         "time" : {
-          "start" : 1732904418082,
-          "stop" : 1732904441480,
-          "duration" : 23398
+          "start" : 1732905701938,
+          "stop" : 1732905732857,
+          "duration" : 30919
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ab95bbfd38d9ff65d0e4b6d9268274ed"
+      "uid" : "a4ef7783093ec10d8b303ab9e1dd17ad"
     }, {
       "name" : "12-MainThread",
       "children" : [ {
         "name" : "Account login",
-        "uid" : "9ac571dd765022a8",
-        "parentUid" : "847b0d5ebf38b245e0c3d523b844177f",
+        "uid" : "6d910a922f7b48af",
+        "parentUid" : "a44a67a366344db52a6f7279999f5d55",
         "status" : "passed",
         "time" : {
-          "start" : 1732904418087,
-          "stop" : 1732904450284,
-          "duration" : 32197
+          "start" : 1732905701967,
+          "stop" : 1732905733602,
+          "duration" : 31635
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "847b0d5ebf38b245e0c3d523b844177f"
+      "uid" : "a44a67a366344db52a6f7279999f5d55"
     }, {
       "name" : "9-MainThread",
       "children" : [ {
         "name" : "Add new services",
-        "uid" : "713a87dc83709e7e",
-        "parentUid" : "07cde4ebbc0923a80cd19a5a2dd323e4",
+        "uid" : "90b0859bd65fcb19",
+        "parentUid" : "1ffed19464f140d81d3b67e477c4b46b",
         "status" : "passed",
         "time" : {
-          "start" : 1732904418105,
-          "stop" : 1732904471444,
-          "duration" : 53339
+          "start" : 1732905701855,
+          "stop" : 1732905750678,
+          "duration" : 48823
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "07cde4ebbc0923a80cd19a5a2dd323e4"
+      "uid" : "1ffed19464f140d81d3b67e477c4b46b"
     } ],
-    "uid" : "1d8bb7867928871cecebaa3bcc8b9f29"
+    "uid" : "c4bf2daea9a248340d06e4cdee536801"
   } ],
   "name" : "timeline"
 }
