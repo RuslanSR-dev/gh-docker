@@ -46,7 +46,7 @@ def options_chr():
 
 @pytest.fixture(autouse=True)
 def driver(request):
-    driver = options_chr() # if os.environ["BROWSER"] == "chrome" else options_fir()
+    driver = options_chr()  # if os.environ["BROWSER"] == "chrome" else options_fir()
     request.cls.driver = driver
     yield
     allure.attach(
@@ -56,6 +56,24 @@ def driver(request):
     )
     driver.quit()
 
+
+@pytest.hookimpl(hookwrapper=True, tryfirst=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    report = outcome.get_result()
+    setattr(item, f"rep_{report.when}", report)
+
+
+@pytest.fixture(autouse=True)
+def take_screenshot_on_failure(request, driver):
+    yield
+    if request.node.rep_call.failed:
+        screenshot = driver.get_screenshot_as_png()
+        allure.attach(
+            screenshot,
+            name="Screen on failure",
+            attachment_type=allure.attachment_type.PNG
+        )
 
 # @pytest.fixture(autouse=True, scope="session")
 # def setup_environments_properties():
