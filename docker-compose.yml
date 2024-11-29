@@ -3,26 +3,24 @@ version: "3.7"
 services:
   tests:
     image: pytest:v1
-    #    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/workspace
     command: >
-      /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER LOGIN_DOCKER=$$LOGIN_DOCKER PASSWORD_DOCKER=$$PASSWORD_DOCKER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
-    # /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
+      /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
+    #    /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER LOGIN_DOCKER=$$LOGIN_DOCKER PASSWORD_DOCKER=$$PASSWORD_DOCKER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
     working_dir: /usr/workspace
     environment:
       BROWSER: ${BROWSER:-chrome}
       STAGE: ${STAGE:-qa}
-    # LOGIN_DOCKER: ${LOGIN_DOCKER}
-    # PASSWORD_DOCKER: ${PASSWORD_DOCKER}
+      LOGIN_DOCKER: ${LOGIN_DOCKER}
+      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
     tty: true
 
   report:
     image: pytest:v1
-    #    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
     build:
       context: .
       dockerfile: Dockerfile
