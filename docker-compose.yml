@@ -1,0 +1,119 @@
+version: "3.7"
+
+services:
+  tests:
+    #    image: pytest:v1
+    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/workspace
+    command: >
+      /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
+    #      /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER LOGIN_DOCKER=$$LOGIN_DOCKER PASSWORD_DOCKER=$$PASSWORD_DOCKER pytest --alluredir=allure-results --junitxml=test-results.xml || true"
+    working_dir: /usr/workspace
+    environment:
+      BROWSER: ${BROWSER:-chrome}
+      STAGE: ${STAGE:-qa}
+      LOGIN_DOCKER: ${LOGIN_DOCKER}
+      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
+    tty: true
+
+  report:
+    #    image: pytest:v1
+    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/workspace
+    command: >
+      /bin/sh -c "echo "Branch=$CI_COMMIT_REF_NAME" > allure-results/environment.properties &&
+      echo "Commit=$CI_COMMIT_SHORT_SHA" >> allure-results/environment.properties &&
+      echo "Browser=$BROWSER" >> allure-results/environment.properties &&
+      allure generate allure-results --clean -o allure-report"
+    working_dir: /usr/workspace
+
+
+#version: "3.7"
+#
+#services:
+#  regression:
+#    image: pytest:v1
+#    #    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    volumes:
+#      - ./:/usr/workspace
+#    command: >
+#      /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER LOGIN_DOCKER=$$LOGIN_DOCKER PASSWORD_DOCKER=$$PASSWORD_DOCKER pytest -m regression --alluredir=allure-results --junitxml=test-results.xml || true"
+#    working_dir: /usr/workspace
+#    environment:
+#      BROWSER: ${BROWSER:-chrome}
+#      STAGE: ${STAGE:-qa}
+#      LOGIN_DOCKER: ${LOGIN_DOCKER}
+#      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
+#    tty: true
+#
+#  smoke:
+#    image: pytest:v1
+#    #    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    volumes:
+#      - ./:/usr/workspace
+#    command: >
+#      /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER LOGIN_DOCKER=$$LOGIN_DOCKER PASSWORD_DOCKER=$$PASSWORD_DOCKER pytest -m smoke -n 2 --alluredir=allure-results --junitxml=test-results.xml || true"
+#    working_dir: /usr/workspace
+#    environment:
+#      BROWSER: ${BROWSER:-chrome}
+#      STAGE: ${STAGE:-qa}
+#      LOGIN_DOCKER: ${LOGIN_DOCKER}
+#      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
+#    tty: true
+#
+#  report:
+#    image: pytest:v1
+#    #    image: registry.gitlab.com/ruslan_salakhov/basepage-docker
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    volumes:
+#      - ./:/usr/workspace
+#    command: >
+#      /bin/sh -c "echo "Branch=$CI_COMMIT_REF_NAME" > allure-results/environment.properties &&
+#      echo "Commit=$CI_COMMIT_SHORT_SHA" >> allure-results/environment.properties &&
+#      echo "Browser=$BROWSER" >> allure-results/environment.properties &&
+#      allure generate allure-results --clean -o allure-report"
+#    working_dir: /usr/workspace
+
+
+#services: # Это наш контейнер
+#regression: # Имя контейнера
+#image: api:v1
+#build:
+#context: .
+#dockerfile: Dockerfile-api
+#volumes:
+#- ./:/usr/workspace
+#working_dir: /usr/workspace
+#command: /bin/sh -c "STAGE=$$STAGE pytest -m regression -n 4 --alluredir=report"
+#environment:
+#STAGE: ${STAGE:-dev}
+#tty: true
+#
+#smoke: # Имя контейнера
+#image: api:v1
+#build:
+#context: .
+#dockerfile: Dockerfile-api
+#volumes:
+#- ./:/usr/workspace
+#working_dir: /usr/workspace
+#command: /bin/sh -c "STAGE=$$STAGE pytest -m smoke -n 4 --alluredir=report"
+#environment:
+#STAGE: ${STAGE:-dev}
+#tty: true
