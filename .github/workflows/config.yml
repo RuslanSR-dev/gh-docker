@@ -35,6 +35,8 @@ jobs:
         env:
           BROWSER: ${{ vars.BROWSER }} # Браузер из переменных
           STAGE: ${{ vars.STAGE }} # Стадия (Stage) тестов
+          LOGIN_DOCKER: ${{ secrets.LOGIN_DOCKER }} # Логин
+          PASSWORD_DOCKER: ${{ secrets.PASSWORD_DOCKER }} # Пароль
         run: |
           docker compose up tests # Запускаем контейнер с тестами
 
