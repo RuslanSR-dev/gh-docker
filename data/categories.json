@@ -5,40 +5,40 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Create a new request",
-        "uid" : "ccc8e57f9c2595ef",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1732902407497,
-          "stop" : 1732902449175,
-          "duration" : 41678
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Add new services",
-        "uid" : "e224072162c83421",
+        "uid" : "34e313b180a82ba1",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1732902407604,
-          "stop" : 1732902442199,
-          "duration" : 34595
+          "start" : 1732902995520,
+          "stop" : 1732903031403,
+          "duration" : 35883
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Account login",
-        "uid" : "c8ad5d32bd52dc08",
+        "uid" : "8a235fe9db8ca8bd",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1732902407606,
-          "stop" : 1732902446318,
-          "duration" : 38712
+          "start" : 1732902995626,
+          "stop" : 1732903032964,
+          "duration" : 37338
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create a new request",
+        "uid" : "bf4714debf2a0107",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1732902995628,
+          "stop" : 1732903035328,
+          "duration" : 39700
         },
         "flaky" : false,
         "newFailed" : false,

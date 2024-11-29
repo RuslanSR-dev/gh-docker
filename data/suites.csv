@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Fri Nov 29 17:46:47 GMT 2024","Fri Nov 29 17:47:29 GMT 2024","41678","tests","test_add_new_services","TestAddNewServices","","","Create a new request",""
-"broken","Fri Nov 29 17:46:47 GMT 2024","Fri Nov 29 17:47:22 GMT 2024","34595","tests","test_add_new_services","TestAddNewServices","","","Add new services",""
-"broken","Fri Nov 29 17:46:47 GMT 2024","Fri Nov 29 17:47:26 GMT 2024","38712","tests","test_add_new_services","TestAddNewServices","","","Account login",""
+"broken","Fri Nov 29 17:56:35 GMT 2024","Fri Nov 29 17:57:11 GMT 2024","35883","tests","test_add_new_services","TestAddNewServices","","","Add new services",""
+"broken","Fri Nov 29 17:56:35 GMT 2024","Fri Nov 29 17:57:15 GMT 2024","39700","tests","test_add_new_services","TestAddNewServices","","","Create a new request",""
+"broken","Fri Nov 29 17:56:35 GMT 2024","Fri Nov 29 17:57:12 GMT 2024","37338","tests","test_add_new_services","TestAddNewServices","","","Account login",""
