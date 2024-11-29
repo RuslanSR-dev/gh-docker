@@ -1,60 +1,60 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "1df454a16cca",
+    "name" : "58704aa16953",
     "children" : [ {
       "name" : "15-MainThread",
       "children" : [ {
-        "name" : "Create a new request",
-        "uid" : "bf4714debf2a0107",
-        "parentUid" : "596c68f2b1eebe970082cba056c951c4",
-        "status" : "broken",
+        "name" : "Add new services",
+        "uid" : "af1b44af7e8363fc",
+        "parentUid" : "aadef81b796507e0b86bdb9e8f0d869b",
+        "status" : "passed",
         "time" : {
-          "start" : 1732902995628,
-          "stop" : 1732903035328,
-          "duration" : 39700
+          "start" : 1732903281786,
+          "stop" : 1732903333661,
+          "duration" : 51875
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "596c68f2b1eebe970082cba056c951c4"
+      "uid" : "aadef81b796507e0b86bdb9e8f0d869b"
     }, {
       "name" : "12-MainThread",
       "children" : [ {
-        "name" : "Account login",
-        "uid" : "8a235fe9db8ca8bd",
-        "parentUid" : "26cc2bd8db079c067a3e44c02a63ded5",
-        "status" : "broken",
+        "name" : "Create a new request",
+        "uid" : "931ebcd7d0e71478",
+        "parentUid" : "46a23a09b8530a453feb939273461370",
+        "status" : "passed",
         "time" : {
-          "start" : 1732902995626,
-          "stop" : 1732903032964,
-          "duration" : 37338
+          "start" : 1732903281757,
+          "stop" : 1732903309536,
+          "duration" : 27779
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "26cc2bd8db079c067a3e44c02a63ded5"
+      "uid" : "46a23a09b8530a453feb939273461370"
     }, {
       "name" : "9-MainThread",
       "children" : [ {
-        "name" : "Add new services",
-        "uid" : "34e313b180a82ba1",
-        "parentUid" : "c419c23409e2449e092ff8536b53bcf6",
-        "status" : "broken",
+        "name" : "Account login",
+        "uid" : "5c550c9deaa95652",
+        "parentUid" : "69b10b884f92035fbb8fca0a62d2cc55",
+        "status" : "passed",
         "time" : {
-          "start" : 1732902995520,
-          "stop" : 1732903031403,
-          "duration" : 35883
+          "start" : 1732903281810,
+          "stop" : 1732903306411,
+          "duration" : 24601
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c419c23409e2449e092ff8536b53bcf6"
+      "uid" : "69b10b884f92035fbb8fca0a62d2cc55"
     } ],
-    "uid" : "c9ca26d113300295074084b563425c33"
+    "uid" : "2977c7d663d96dcef61c94c07a00af23"
   } ],
   "name" : "timeline"
 }
