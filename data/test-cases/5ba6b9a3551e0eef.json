@@ -1,0 +1,229 @@
+{
+  "uid" : "5ba6b9a3551e0eef",
+  "name" : "Add new services",
+  "fullName" : "tests.test_add_new_services.TestAddNewServices#test_add_new_services",
+  "historyId" : "9442c393196b6d8cfbb530e634297e94",
+  "time" : {
+    "start" : 1732902107571,
+    "stop" : 1732902142327,
+    "duration" : 34756
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <test_add_new_services.TestAddNewServices object at 0x7f674d835160>\n\n    @allure.title(\"Add new services\")\n    @allure.severity(Severity.MINOR)\n    @pytest.mark.regression\n    def test_add_new_services(self):\n        self.login_page.open()\n        self.login_page.enter_login(os.getenv(\"LOGIN_DOCKER\"))\n        self.login_page.enter_password(os.getenv(\"PASSWORD_DOCKER\"))\n        self.login_page.click_on_button_login()\n>       self.request_page.is_opened()\n\ntests/test_add_new_services.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_page.py:33: in is_opened\n    self.wait.until(self.EC.url_contains(self._PAGE_URL))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"d4a7b8e679954e783c27af4b7c6c7256\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f674d5d0040>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1732902107054,
+      "stop" : 1732902107570,
+      "duration" : 516
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAddNewServices",
+    "time" : {
+      "start" : 1732902107570,
+      "stop" : 1732902107571,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <test_add_new_services.TestAddNewServices object at 0x7f674d835160>\n\n    @allure.title(\"Add new services\")\n    @allure.severity(Severity.MINOR)\n    @pytest.mark.regression\n    def test_add_new_services(self):\n        self.login_page.open()\n        self.login_page.enter_login(os.getenv(\"LOGIN_DOCKER\"))\n        self.login_page.enter_password(os.getenv(\"PASSWORD_DOCKER\"))\n        self.login_page.click_on_button_login()\n>       self.request_page.is_opened()\n\ntests/test_add_new_services.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_page.py:33: in is_opened\n    self.wait.until(self.EC.url_contains(self._PAGE_URL))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"d4a7b8e679954e783c27af4b7c6c7256\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f674d5d0040>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+    "steps" : [ {
+      "name" : "Page open https://sdesk.qa.eft-pos.ru/login",
+      "time" : {
+        "start" : 1732902107571,
+        "stop" : 1732902129669,
+        "duration" : 22098
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1732902129669,
+        "stop" : 1732902129777,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "''"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1732902129777,
+        "stop" : 1732902129853,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "''"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click on button login",
+      "time" : {
+        "start" : 1732902129853,
+        "stop" : 1732902130303,
+        "duration" : 450
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://sdesk.qa.eft-pos.ru/requests is opened",
+      "time" : {
+        "start" : 1732902130303,
+        "stop" : 1732902142327,
+        "duration" : 12024
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/workspace/base/base_page.py\", line 33, in is_opened\n    self.wait.until(self.EC.url_contains(self._PAGE_URL))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 105, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1732902142334,
+      "stop" : 1732902142509,
+      "duration" : 175
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b96d3c7526d633a6",
+      "name" : "Screenshot",
+      "source" : "b96d3c7526d633a6.png",
+      "type" : "image/png",
+      "size" : 39318
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAddNewServices::0",
+    "time" : {
+      "start" : 1732902142334,
+      "stop" : 1732902142334,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Services"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "story",
+    "value" : "New services"
+  }, {
+    "name" : "tag",
+    "value" : "regression"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_new_services"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddNewServices"
+  }, {
+    "name" : "host",
+    "value" : "7dd17bcc1273"
+  }, {
+    "name" : "thread",
+    "value" : "12-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_add_new_services"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "regression" ]
+  },
+  "source" : "5ba6b9a3551e0eef.json",
+  "parameterValues" : [ ]
+}
