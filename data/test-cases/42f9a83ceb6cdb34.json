@@ -1,0 +1,340 @@
+{
+  "uid" : "42f9a83ceb6cdb34",
+  "name" : "Add new services",
+  "fullName" : "tests.test_add_new_services.TestAddNewServices#test_add_new_services",
+  "historyId" : "9442c393196b6d8cfbb530e634297e94",
+  "time" : {
+    "start" : 1732903646692,
+    "stop" : 1732903682859,
+    "duration" : 36167
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <test_add_new_services.TestAddNewServices object at 0x7f20223212e0>\n\n    @allure.title(\"Add new services\")\n    @allure.severity(Severity.MINOR)\n    @pytest.mark.regression\n    def test_add_new_services(self):\n        self.login_page.open()\n        self.login_page.enter_login(os.getenv(\"LOGIN_DOCKER\"))\n        self.login_page.enter_password(os.getenv(\"PASSWORD_DOCKER\"))\n        self.login_page.click_on_button_login()\n>       self.request_page.is_opened()\n\ntests/test_add_new_services.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_page.py:33: in is_opened\n    self.wait.until(self.EC.url_contains(self._PAGE_URL))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"2769d1522ca3b9c325892c6a4ed3b3d3\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f2021c26ac0>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAddNewServices",
+    "time" : {
+      "start" : 1732903646691,
+      "stop" : 1732903646691,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1732903645945,
+      "stop" : 1732903646690,
+      "duration" : 745
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1732903645943,
+      "stop" : 1732903645945,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "take_screenshot_on_failure",
+    "time" : {
+      "start" : 1732903646691,
+      "stop" : 1732903646691,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <test_add_new_services.TestAddNewServices object at 0x7f20223212e0>\n\n    @allure.title(\"Add new services\")\n    @allure.severity(Severity.MINOR)\n    @pytest.mark.regression\n    def test_add_new_services(self):\n        self.login_page.open()\n        self.login_page.enter_login(os.getenv(\"LOGIN_DOCKER\"))\n        self.login_page.enter_password(os.getenv(\"PASSWORD_DOCKER\"))\n        self.login_page.click_on_button_login()\n>       self.request_page.is_opened()\n\ntests/test_add_new_services.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/base_page.py:33: in is_opened\n    self.wait.until(self.EC.url_contains(self._PAGE_URL))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"2769d1522ca3b9c325892c6a4ed3b3d3\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f2021c26ac0>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+    "steps" : [ {
+      "name" : "Page open https://sdesk.qa.eft-pos.ru/login",
+      "time" : {
+        "start" : 1732903646692,
+        "stop" : 1732903670208,
+        "duration" : 23516
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1732903670209,
+        "stop" : 1732903670329,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "''"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1732903670329,
+        "stop" : 1732903670429,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "''"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click on button login",
+      "time" : {
+        "start" : 1732903670429,
+        "stop" : 1732903670837,
+        "duration" : 408
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://sdesk.qa.eft-pos.ru/requests is opened",
+      "time" : {
+        "start" : 1732903670837,
+        "stop" : 1732903682858,
+        "duration" : 12021
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/workspace/base/base_page.py\", line 33, in is_opened\n    self.wait.until(self.EC.url_contains(self._PAGE_URL))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 105, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAddNewServices::0",
+    "time" : {
+      "start" : 1732903682899,
+      "stop" : 1732903682899,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1732903683016,
+      "stop" : 1732903683087,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "take_screenshot_on_failure::0",
+    "time" : {
+      "start" : 1732903682899,
+      "stop" : 1732903683016,
+      "duration" : 117
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "52b564a9529270ce",
+      "name" : "Screen on failure",
+      "source" : "52b564a9529270ce.png",
+      "type" : "image/png",
+      "size" : 39318
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "story",
+    "value" : "New services"
+  }, {
+    "name" : "epic",
+    "value" : "Services"
+  }, {
+    "name" : "tag",
+    "value" : "regression"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_new_services"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddNewServices"
+  }, {
+    "name" : "host",
+    "value" : "82e3a2656aee"
+  }, {
+    "name" : "thread",
+    "value" : "12-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_add_new_services"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "af1b44af7e8363fc",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/af1b44af7e8363fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732903281786,
+          "stop" : 1732903333661,
+          "duration" : 51875
+        }
+      }, {
+        "uid" : "34e313b180a82ba1",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/34e313b180a82ba1",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732902995520,
+          "stop" : 1732903031403,
+          "duration" : 35883
+        }
+      }, {
+        "uid" : "e224072162c83421",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/e224072162c83421",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732902407604,
+          "stop" : 1732902442199,
+          "duration" : 34595
+        }
+      }, {
+        "uid" : "c8df4f43025ffea7",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/c8df4f43025ffea7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732902142921,
+          "stop" : 1732902175250,
+          "duration" : 32329
+        }
+      }, {
+        "uid" : "ef210792b4521f09",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/ef210792b4521f09",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732900829848,
+          "stop" : 1732900856195,
+          "duration" : 26347
+        }
+      } ]
+    },
+    "tags" : [ "regression" ]
+  },
+  "source" : "42f9a83ceb6cdb34.json",
+  "parameterValues" : [ ]
+}

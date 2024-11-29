@@ -7,40 +7,40 @@
       "children" : [ {
         "name" : "TestAddNewServices",
         "children" : [ {
-          "name" : "Create a new request",
-          "uid" : "931ebcd7d0e71478",
+          "name" : "Add new services",
+          "uid" : "42f9a83ceb6cdb34",
           "parentUid" : "f22ec7209d706af9e3be90e0728abf5a",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1732903281757,
-            "stop" : 1732903309536,
-            "duration" : 27779
+            "start" : 1732903646692,
+            "stop" : 1732903682859,
+            "duration" : 36167
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Add new services",
-          "uid" : "af1b44af7e8363fc",
+          "name" : "Create a new request",
+          "uid" : "9f87754d165f0b3f",
           "parentUid" : "f22ec7209d706af9e3be90e0728abf5a",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1732903281786,
-            "stop" : 1732903333661,
-            "duration" : 51875
+            "start" : 1732903646727,
+            "stop" : 1732903684770,
+            "duration" : 38043
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Account login",
-          "uid" : "5c550c9deaa95652",
+          "uid" : "226debdff7d18ab",
           "parentUid" : "f22ec7209d706af9e3be90e0728abf5a",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1732903281810,
-            "stop" : 1732903306411,
-            "duration" : 24601
+            "start" : 1732903646759,
+            "stop" : 1732903687361,
+            "duration" : 40602
           },
           "flaky" : false,
           "newFailed" : false,
