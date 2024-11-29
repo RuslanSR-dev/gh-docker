@@ -1,4 +1,11 @@
 [ {
+  "buildOrder" : 3,
+  "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker/",
+  "reportName" : "Allure Report",
+  "data" : {
+    "duration" : 41678
+  }
+}, {
   "buildOrder" : 2,
   "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker/",
   "reportName" : "Allure Report",

@@ -2,13 +2,23 @@
   "9442c393196b6d8cfbb530e634297e94" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "e224072162c83421",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/e224072162c83421",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1732902407604,
+        "stop" : 1732902442199,
+        "duration" : 34595
+      }
+    }, {
       "uid" : "c8df4f43025ffea7",
       "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/c8df4f43025ffea7",
       "status" : "broken",
@@ -33,13 +43,23 @@
   "228e38d513cb30ccf4ed3a06049cb00d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "c8ad5d32bd52dc08",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/c8ad5d32bd52dc08",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1732902407606,
+        "stop" : 1732902446318,
+        "duration" : 38712
+      }
+    }, {
       "uid" : "50d68b7f18a4381a",
       "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/50d68b7f18a4381a",
       "status" : "broken",
@@ -64,13 +84,23 @@
   "a11523a7060bd6db37e62ce2f20289cd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "ccc8e57f9c2595ef",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/ccc8e57f9c2595ef",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1732902407497,
+        "stop" : 1732902449175,
+        "duration" : 41678
+      }
+    }, {
       "uid" : "874c8d7d93664849",
       "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/874c8d7d93664849",
       "status" : "broken",
