@@ -1,7 +1,5 @@
-import os
 import pytest
 import allure
-from allure_commons.types import AttachmentType
 from selenium import webdriver
 
 
@@ -31,29 +29,11 @@ def options_chr():
     return driver
 
 
-# def options_fir():
-#     firefox_options = webdriver.FirefoxOptions()
-#     firefox_options.add_argument("--window-size=1900,1030")
-#     # chrome_options.add_argument("--headless")
-#     firefox_options.add_argument(
-#         "--user-agent=Mozilla/5.0 (Windows NT 10.0) "
-#         "AppleWebKit/537.36 (KHTML, like Gecko) "
-#         "Chrome/124.0.0.0 Safari/537.36")
-#     firefox_options.add_argument("--disable-blink-features=AutomationControlled")
-#     driver = webdriver.Firefox(options=firefox_options)
-#     return driver
-
-
 @pytest.fixture(autouse=True)
 def driver(request):
     driver = options_chr()  # if os.environ["BROWSER"] == "chrome" else options_fir()
     request.cls.driver = driver
-    yield
-    allure.attach(
-        body=driver.get_screenshot_as_png(),
-        name="Screenshot",
-        attachment_type=AttachmentType.PNG
-    )
+    yield driver
     driver.quit()
 
 
@@ -74,14 +54,3 @@ def take_screenshot_on_failure(request, driver):
             name="Screen on failure",
             attachment_type=allure.attachment_type.PNG
         )
-
-# @pytest.fixture(autouse=True, scope="session")
-# def setup_environments_properties():
-#     properties = {
-#         "Stage": os.environ['STAGE'],
-#         "Browser": os.environ['BROWSER'],
-#         "Python_version": "3.12.5"
-#     }
-#     with open("allure-results/environment.properties", "w") as file:
-#         for key, value in properties.items():
-#             file.write(f"{key}={value}\n")
