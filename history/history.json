@@ -1,0 +1,65 @@
+{
+  "9442c393196b6d8cfbb530e634297e94" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ef210792b4521f09",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/ef210792b4521f09",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1732900829848,
+        "stop" : 1732900856195,
+        "duration" : 26347
+      }
+    } ]
+  },
+  "228e38d513cb30ccf4ed3a06049cb00d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "12020aeceb46f17d",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/12020aeceb46f17d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1732900856843,
+        "stop" : 1732900882273,
+        "duration" : 25430
+      }
+    } ]
+  },
+  "a11523a7060bd6db37e62ce2f20289cd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f1744f36518b3ac2",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/f1744f36518b3ac2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1732900882853,
+        "stop" : 1732900910540,
+        "duration" : 27687
+      }
+    } ]
+  }
+}
