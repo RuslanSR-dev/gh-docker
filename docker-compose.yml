@@ -101,8 +101,10 @@ services:
       pip install -r /usr/workspace/requirements.txt &&
       pytest -o log_cli=true --alluredir=allure-results"
     environment:
-      BROWSER: chrome
-      STAGE: ${STAGE:-dev}
+      BROWSER: ${BROWSER:-chrome}
+      STAGE: ${STAGE:-qa}
+      LOGIN_DOCKER: ${LOGIN_DOCKER}
+      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
       VERSION: ${VERSION:-latest}
     volumes:
       - ./:/usr/workspace
