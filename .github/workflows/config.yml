@@ -38,7 +38,7 @@ jobs:
           LOGIN_DOCKER: ${{ secrets.LOGIN_DOCKER }} # Логин
           PASSWORD_DOCKER: ${{ secrets.PASSWORD_DOCKER }} # Пароль
         run: |
-          VERSION="130.0" docker compose up chrome # Запускаем контейнер с тестами
+          docker compose up regression smoke # Запускаем контейнер с тестами
 #          docker compose up tests # Запускаем контейнер с тестами
 
       # Шаг 4 - Копирование истории
@@ -59,8 +59,7 @@ jobs:
           CI_COMMIT_REF_NAME: ${{ github.ref_name }} # Имя ветки
           CI_COMMIT_SHORT_SHA: ${{ github.sha }} # SHA коммита
         run: |
-          VERSION="130.0" docker compose up report # Генерация Allure-отчета
-#          docker compose up report # Генерация Allure-отчета
+          docker compose up report # Генерация Allure-отчета
 
       # Шаг 6 - Деплой на gh-pages
       # Публикуем Allure-отчет на GitHub Pages
