@@ -82,7 +82,7 @@
 version: "3.7"
 
 services:
-  regression:
+  chrome:
     user: root
     build:
       context: .
@@ -99,42 +99,11 @@ services:
       . /usr/workspace/venv/bin/activate &&
       pip install --upgrade pip &&
       pip install -r /usr/workspace/requirements.txt &&
-      pytest -m regression -o log_cli=true --alluredir=allure-results"
+      pytest -o log_cli=true --alluredir=allure-results"
     environment:
-      BROWSER: ${BROWSER:-chrome}
-      STAGE: ${STAGE:-qa}
+      BROWSER: chrome
+      STAGE: ${STAGE:-dev}
       VERSION: ${VERSION:-latest}
-      LOGIN_DOCKER: ${LOGIN_DOCKER}
-      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
-    volumes:
-      - ./:/usr/workspace
-    platform: linux/amd64 # Если процессор Apple
-    tty: true
-
-  smoke:
-    user: root
-    build:
-      context: .
-      dockerfile: Dockerfile
-      args:
-        BASE_IMAGE: selenium/standalone-chrome:${VERSION}
-    image: chrome:${VERSION}
-    shm_size: 2gb
-    command: >
-      /bin/sh -c "apt-get update &&
-      ls -la &&
-      apt-get install -y python3 python3-pip python3-venv openjdk-11-jre &&
-      python3 -m venv /usr/workspace/venv &&
-      . /usr/workspace/venv/bin/activate &&
-      pip install --upgrade pip &&
-      pip install -r /usr/workspace/requirements.txt &&
-      pytest -m smoke -o log_cli=true --alluredir=allure-results"
-    environment:
-      BROWSER: ${BROWSER:-chrome}
-      STAGE: ${STAGE:-qa}
-      VERSION: ${VERSION:-latest}
-      LOGIN_DOCKER: ${LOGIN_DOCKER}
-      PASSWORD_DOCKER: ${PASSWORD_DOCKER}
     volumes:
       - ./:/usr/workspace
     platform: linux/amd64 # Если процессор Apple
