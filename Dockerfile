@@ -38,7 +38,7 @@ WORKDIR /usr/workspace
 COPY ./requirements.txt /usr/workspace
 
 # Устанавливаем зависимости
-RUN pip3 install --upgrade pip --break-system-packages && \
+RUN pip3 install --upgrade pip --force-reinstall --break-system-packages && \
     pip3 install -r requirements.txt --break-system-packages
 # RUN pip3 install --upgrade pip && \
 #    pip3 install -r requirements.txt || pip3 install -r requirements.txt --break-system-packages
