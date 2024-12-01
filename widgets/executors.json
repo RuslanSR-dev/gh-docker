@@ -2,9 +2,9 @@
   "name" : "GitHub Actions",
   "type" : "github",
   "url" : "https://github.com/RuslanSR-dev/gh-docker",
-  "buildOrder" : 11,
-  "buildName" : "12107383135",
-  "buildUrl" : "https://github.com/RuslanSR-dev/gh-docker/actions/runs/12107383135",
+  "buildOrder" : 20,
+  "buildName" : "12107772900",
+  "buildUrl" : "https://github.com/RuslanSR-dev/gh-docker/actions/runs/12107772900",
   "reportName" : "Allure Report",
   "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker/"
 } ]

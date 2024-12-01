@@ -1,0 +1,457 @@
+{
+  "uid" : "fa8c7937b7ce341d",
+  "name" : "Create a new request",
+  "fullName" : "tests.test_add_new_services.TestAddNewServices#test_create_new_request",
+  "historyId" : "a11523a7060bd6db37e62ce2f20289cd",
+  "time" : {
+    "start" : 1733076069290,
+    "stop" : 1733076101335,
+    "duration" : 32045
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1733076068492,
+      "stop" : 1733076068494,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "take_screenshot_on_failure",
+    "time" : {
+      "start" : 1733076069289,
+      "stop" : 1733076069289,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAddNewServices",
+    "time" : {
+      "start" : 1733076069289,
+      "stop" : 1733076069289,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1733076068494,
+      "stop" : 1733076069289,
+      "duration" : 795
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Page open https://sdesk.qa.eft-pos.ru/login",
+      "time" : {
+        "start" : 1733076069290,
+        "stop" : 1733076093554,
+        "duration" : 24264
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Account login",
+      "time" : {
+        "start" : 1733076093555,
+        "stop" : 1733076094133,
+        "duration" : 578
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Enter login",
+        "time" : {
+          "start" : 1733076093555,
+          "stop" : 1733076093695,
+          "duration" : 140
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "login",
+          "value" : "'salakhov.rr'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Enter password",
+        "time" : {
+          "start" : 1733076093695,
+          "stop" : 1733076093812,
+          "duration" : 117
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "'yQ7u67cKL@_2w'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Click on button login",
+        "time" : {
+          "start" : 1733076093812,
+          "stop" : 1733076094133,
+          "duration" : 321
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "'salakhov.rr'"
+      }, {
+        "name" : "password",
+        "value" : "'yQ7u67cKL@_2w'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://sdesk.qa.eft-pos.ru/requests is opened",
+      "time" : {
+        "start" : 1733076094133,
+        "stop" : 1733076097147,
+        "duration" : 3014
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click on the new request button",
+      "time" : {
+        "start" : 1733076097147,
+        "stop" : 1733076097747,
+        "duration" : 600
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://sdesk.qa.eft-pos.ru/requests/new is opened",
+      "time" : {
+        "start" : 1733076097747,
+        "stop" : 1733076097797,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Logout from account",
+      "time" : {
+        "start" : 1733076097797,
+        "stop" : 1733076101161,
+        "duration" : 3364
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click on the assertion button",
+      "time" : {
+        "start" : 1733076101161,
+        "stop" : 1733076101331,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://sdesk.qa.eft-pos.ru/login is opened",
+      "time" : {
+        "start" : 1733076101331,
+        "stop" : 1733076101335,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "take_screenshot_on_failure::0",
+    "time" : {
+      "start" : 1733076101336,
+      "stop" : 1733076101336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAddNewServices::0",
+    "time" : {
+      "start" : 1733076101336,
+      "stop" : 1733076101336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1733076101337,
+      "stop" : 1733076101411,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "New services"
+  }, {
+    "name" : "severity",
+    "value" : "trivial"
+  }, {
+    "name" : "epic",
+    "value" : "Services"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_new_services"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddNewServices"
+  }, {
+    "name" : "host",
+    "value" : "88b0bf99e2a2"
+  }, {
+    "name" : "thread",
+    "value" : "12-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_add_new_services"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "trivial",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "2cd700db7e291853",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/2cd700db7e291853",
+        "status" : "passed",
+        "time" : {
+          "start" : 1733072547083,
+          "stop" : 1733072579565,
+          "duration" : 32482
+        }
+      }, {
+        "uid" : "44d83e70f2abd0b5",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/44d83e70f2abd0b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732905701938,
+          "stop" : 1732905732857,
+          "duration" : 30919
+        }
+      }, {
+        "uid" : "a090a46c09cc0618",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/a090a46c09cc0618",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732904418082,
+          "stop" : 1732904441480,
+          "duration" : 23398
+        }
+      }, {
+        "uid" : "9f87754d165f0b3f",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/9f87754d165f0b3f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732903646727,
+          "stop" : 1732903684770,
+          "duration" : 38043
+        }
+      }, {
+        "uid" : "931ebcd7d0e71478",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/931ebcd7d0e71478",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732903281757,
+          "stop" : 1732903309536,
+          "duration" : 27779
+        }
+      }, {
+        "uid" : "bf4714debf2a0107",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/bf4714debf2a0107",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732902995628,
+          "stop" : 1732903035328,
+          "duration" : 39700
+        }
+      }, {
+        "uid" : "ccc8e57f9c2595ef",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/ccc8e57f9c2595ef",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732902407497,
+          "stop" : 1732902449175,
+          "duration" : 41678
+        }
+      }, {
+        "uid" : "874c8d7d93664849",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/874c8d7d93664849",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732902146026,
+          "stop" : 1732902185499,
+          "duration" : 39473
+        }
+      }, {
+        "uid" : "f1744f36518b3ac2",
+        "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/f1744f36518b3ac2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1732900882853,
+          "stop" : 1732900910540,
+          "duration" : 27687
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "fa8c7937b7ce341d.json",
+  "parameterValues" : [ ]
+}
