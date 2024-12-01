@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "13ff2701bc7e01d9",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/13ff2701bc7e01d9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1733072547241,
+        "stop" : 1733072595676,
+        "duration" : 48435
+      }
+    }, {
       "uid" : "90b0859bd65fcb19",
       "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/90b0859bd65fcb19",
       "status" : "passed",
@@ -92,11 +101,20 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "82ad70bceb90a3c3",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/82ad70bceb90a3c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1733072547104,
+        "stop" : 1733072573608,
+        "duration" : 26504
+      }
+    }, {
       "uid" : "6d910a922f7b48af",
       "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/6d910a922f7b48af",
       "status" : "passed",
@@ -180,11 +198,20 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "2cd700db7e291853",
+      "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/2cd700db7e291853",
+      "status" : "passed",
+      "time" : {
+        "start" : 1733072547083,
+        "stop" : 1733072579565,
+        "duration" : 32482
+      }
+    }, {
       "uid" : "44d83e70f2abd0b5",
       "reportUrl" : "https://RuslanSR-dev.github.io/gh-docker//#testresult/44d83e70f2abd0b5",
       "status" : "passed",
