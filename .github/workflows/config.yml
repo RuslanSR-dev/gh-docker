@@ -38,7 +38,8 @@ jobs:
           LOGIN_DOCKER: ${{ secrets.LOGIN_DOCKER }} # Логин
           PASSWORD_DOCKER: ${{ secrets.PASSWORD_DOCKER }} # Пароль
         run: |
-          docker compose up tests # Запускаем контейнер с тестами
+          docker compose up regression smoke # Запускаем контейнер с тестами
+#          docker compose up tests # Запускаем контейнер с тестами
 
       # Шаг 4 - Копирование истории
       # Копируем историю отчетов из gh-pages в папку allure-results
