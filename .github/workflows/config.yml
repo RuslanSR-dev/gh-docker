@@ -38,7 +38,7 @@ jobs:
           LOGIN_DOCKER: ${{ secrets.LOGIN_DOCKER }} # Логин
           PASSWORD_DOCKER: ${{ secrets.PASSWORD_DOCKER }} # Пароль
         run: |
-          VERSION=130.0 docker compose up regression smoke # Запускаем контейнер с тестами
+          VERSION="130.0" docker compose up regression smoke # Запускаем контейнер с тестами
 #          docker compose up tests # Запускаем контейнер с тестами
 
       # Шаг 4 - Копирование истории

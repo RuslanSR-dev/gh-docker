@@ -39,4 +39,5 @@ COPY ./requirements.txt /usr/workspace
 
 # Устанавливаем зависимости
 RUN pip3 install --upgrade pip && \
-    pip3 install -r requirements.txt || pip3 install -r requirements.txt --break-system-packages
+    pip3 install -r requirements.txt --break-system-packages
+#    pip3 install -r requirements.txt || pip3 install -r requirements.txt --break-system-packages
